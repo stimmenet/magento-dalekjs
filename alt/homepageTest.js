@@ -1,12 +1,10 @@
 /**
- * @author      Stefan Schwan <schwan@stimme.net>
+ * @author Stefan Schwan <schwan@stimme.net>
  *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
  */
 
 YAML = require('dalekjs/node_modules/js-yaml');
-var config = require('./config/rwd.yml');
+var config = require('./config/madisonIsland.yml');
 
 module.exports = {
 
