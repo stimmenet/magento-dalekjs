@@ -1,0 +1,11 @@
+{
+  "name": "MadisonIslandDalekJSTests",
+  "description": "Provides DalekJS testcases for Magento's Madionson Island template",
+  "version": "0.0.2",
+  "devDependencies": {
+    "dalek-browser-chrome": "0.0.10",
+    "dalek-browser-firefox": "0.0.6",
+    "dalek-reporter-html": "0.0.4",
+    "dalekjs": "0.0.8"
+  }
+}
