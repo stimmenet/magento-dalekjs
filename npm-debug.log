@@ -2,28 +2,90 @@
 1 verbose cli [ '/usr/bin/node',
 1 verbose cli   '/usr/bin/npm',
 1 verbose cli   'install',
-1 verbose cli   'dalekjs',
+1 verbose cli   'delek-reporter-html',
 1 verbose cli   '--save-dev' ]
 2 info using npm@1.4.28
-3 info using node@v0.10.33
+3 info using node@v0.10.35
 4 verbose node symlink /usr/bin/node
-5 error Error: Invalid name: "DalekJS Tests"
-5 error     at ensureValidName (/usr/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/fixer.js:315:15)
-5 error     at Object.module.exports.fixNameField (/usr/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/fixer.js:204:5)
-5 error     at /usr/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/normalize.js:30:38
-5 error     at Array.forEach (native)
-5 error     at normalize (/usr/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/normalize.js:29:15)
-5 error     at final (/usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:342:33)
-5 error     at then (/usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:126:33)
-5 error     at /usr/lib/node_modules/npm/node_modules/read-package-json/read-json.js:328:57
-5 error     at evalmachine.<anonymous>:207:20
-5 error     at OpenReq.Req.done (/usr/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:141:5)
-6 error If you need help, you may report this *entire* log,
-6 error including the npm and node versions, at:
-6 error     <http://github.com/npm/npm/issues>
-7 error System Linux 3.13.0-36-generic
-8 error command "/usr/bin/node" "/usr/bin/npm" "install" "dalekjs" "--save-dev"
-9 error cwd /home/stefan/stimme/Dalek
-10 error node -v v0.10.33
-11 error npm -v 1.4.28
-12 verbose exit [ 1, true ]
+5 warn package.json MadisonIslandDalekJSTests@0.0.2 No repository field.
+6 warn package.json MadisonIslandDalekJSTests@0.0.2 No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'delek-reporter-html', null ]
+9 verbose cache add name=undefined spec="delek-reporter-html" args=["delek-reporter-html",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'delek-reporter-html',
+10 verbose parsed url   path: 'delek-reporter-html',
+10 verbose parsed url   href: 'delek-reporter-html' }
+11 silly lockFile 0b13df37-delek-reporter-html delek-reporter-html
+12 verbose lock delek-reporter-html /home/gronau/.npm/0b13df37-delek-reporter-html.lock
+13 silly lockFile 0b13df37-delek-reporter-html delek-reporter-html
+14 silly lockFile 0b13df37-delek-reporter-html delek-reporter-html
+15 verbose addNamed [ 'delek-reporter-html', '' ]
+16 verbose addNamed [ null, '*' ]
+17 silly lockFile 8991a09c-delek-reporter-html delek-reporter-html@
+18 verbose lock delek-reporter-html@ /home/gronau/.npm/8991a09c-delek-reporter-html.lock
+19 silly addNameRange { name: 'delek-reporter-html', range: '*', hasData: false }
+20 verbose request where is /delek-reporter-html
+21 verbose request registry https://registry.npmjs.org/
+22 verbose request id 9db910d6af031637
+23 verbose url raw /delek-reporter-html
+24 verbose url resolving [ 'https://registry.npmjs.org/', './delek-reporter-html' ]
+25 verbose url resolved https://registry.npmjs.org/delek-reporter-html
+26 verbose request where is https://registry.npmjs.org/delek-reporter-html
+27 info trying registry request attempt 1 at 11:46:47
+28 http GET https://registry.npmjs.org/delek-reporter-html
+29 http 404 https://registry.npmjs.org/delek-reporter-html
+30 verbose headers { date: 'Wed, 28 Jan 2015 10:46:47 GMT',
+30 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+30 verbose headers   'content-type': 'application/json',
+30 verbose headers   'cache-control': 'max-age=0',
+30 verbose headers   'content-length': '52',
+30 verbose headers   'accept-ranges': 'bytes',
+30 verbose headers   via: '1.1 varnish',
+30 verbose headers   age: '0',
+30 verbose headers   'x-served-by': 'cache-fra1221-FRA',
+30 verbose headers   'x-cache': 'MISS',
+30 verbose headers   'x-cache-hits': '0',
+30 verbose headers   'x-timer': 'S1422442007.282220,VS0,VE103',
+30 verbose headers   'keep-alive': 'timeout=10, max=50',
+30 verbose headers   connection: 'Keep-Alive' }
+31 silly registry.get cb [ 404,
+31 silly registry.get   { date: 'Wed, 28 Jan 2015 10:46:47 GMT',
+31 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+31 silly registry.get     'content-type': 'application/json',
+31 silly registry.get     'cache-control': 'max-age=0',
+31 silly registry.get     'content-length': '52',
+31 silly registry.get     'accept-ranges': 'bytes',
+31 silly registry.get     via: '1.1 varnish',
+31 silly registry.get     age: '0',
+31 silly registry.get     'x-served-by': 'cache-fra1221-FRA',
+31 silly registry.get     'x-cache': 'MISS',
+31 silly registry.get     'x-cache-hits': '0',
+31 silly registry.get     'x-timer': 'S1422442007.282220,VS0,VE103',
+31 silly registry.get     'keep-alive': 'timeout=10, max=50',
+31 silly registry.get     connection: 'Keep-Alive' } ]
+32 silly lockFile 8991a09c-delek-reporter-html delek-reporter-html@
+33 silly lockFile 8991a09c-delek-reporter-html delek-reporter-html@
+34 error 404 404 Not Found: delek-reporter-html
+34 error 404
+34 error 404 'delek-reporter-html' is not in the npm registry.
+34 error 404 You should bug the author to publish it
+34 error 404 It was specified as a dependency of 'MadisonIslandDalekJSTests'
+34 error 404
+34 error 404 Note that you can also install from a
+34 error 404 tarball, folder, or http url, or git url.
+35 error System Linux 3.13.0-44-generic
+36 error command "/usr/bin/node" "/usr/bin/npm" "install" "delek-reporter-html" "--save-dev"
+37 error cwd /home/gronau/moggs/magentomogg/dalek/madisionislandalekjs
+38 error node -v v0.10.35
+39 error npm -v 1.4.28
+40 error code E404
+41 verbose exit [ 1, true ]
